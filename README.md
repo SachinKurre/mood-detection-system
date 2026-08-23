@@ -71,6 +71,7 @@ Streamlit Web Interface
 
 ## Project Structure
 
+```text
 mood-detection-system/
 │
 ├── app.py
@@ -96,6 +97,7 @@ mood-detection-system/
     ├── svm_mood_model.pkl
     ├── svm_tfidf_vectorizer.pkl
     └── confusion_matrix.png
+```
 
 ## Installation
 
