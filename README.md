@@ -55,7 +55,7 @@ After comparing the models, **SVM was selected as the final model** used in the 
 
 ## Project Workflow
 
-```text
+
 Text Input
     ↓
 Text Cleaning & Preprocessing
@@ -67,3 +67,90 @@ SVM Classification Model
 Predicted Emotion
     ↓
 Streamlit Web Interface
+
+##Project Structure
+
+
+mood-detection-system/
+│
+├── app.py
+├── compare_models.py
+├── download_dataset.py
+├── evaluate_svm.py
+├── predict.py
+├── train.py
+├── train_svm.py
+├── requirment.txt
+│
+├── data/
+│   └── mood_history.csv
+│
+├── dataset/
+│   ├── train.parquet
+│   ├── test.parquet
+│   └── validation.parquet
+│
+└── model/
+    ├── mood_model.pkl
+    ├── tfidf_vectorizer.pkl
+    ├── svm_mood_model.pkl
+    ├── svm_tfidf_vectorizer.pkl
+    └── confusion_matrix.png
+    ├── tfidf_vectorizer.pkl
+    ├── svm_mood_model.pkl
+    ├── svm_tfidf_vectorizer.pkl
+    └── confusion_matrix.png
+
+##Installation
+
+Clone the repository:
+
+git clone https://github.com/YourUsername/mood-detection-system.git
+cd mood-detection-system
+
+##Install the required libraries:
+
+pip install -r requirment.txt
+
+##Run the Application
+
+Run the Streamlit application:
+
+streamlit run app.py
+
+The application will open in your web browser.
+
+##Dataset
+
+The project uses a text-based emotion dataset divided into training, testing, and validation datasets.
+
+The dataset files are stored in Parquet format inside the dataset/ directory.
+
+##Model Files
+
+The trained SVM model and its TF-IDF vectorizer are stored in the model/ directory:
+
+svm_mood_model.pkl
+svm_tfidf_vectorizer.pkl
+
+These files are loaded by the Streamlit application to make predictions.
+
+##Application
+
+The Streamlit application provides an easy-to-use interface where users can enter a sentence or text and receive the predicted emotion.
+
+The application also maintains a history of previous predictions.
+
+##Future Improvements
+Improve model performance
+Add more emotion categories
+Improve the user interface
+Add advanced mood analytics
+Deploy the application online
+Support multiple languages
+
+##Author
+
+Sachin Kurre
+
+Artificial Intelligence and Machine Learning
