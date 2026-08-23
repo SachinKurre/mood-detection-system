@@ -1,0 +1,18 @@
+# Python cache and virtual environment
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor and environment files
+.env
+.vscode/
+.idea/
+
+# Generated model and chart files
+model/*.pkl
+model/*.joblib
+model/*.png
+
+# Personal app history
+data/mood_history.csv
